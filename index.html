@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Royal Indian Furniture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🪑 Royal Indian Furniture</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="payment.html">Checkout</a>
+        <a href="login.html">Logout</a>
+        <a href="#" onclick="showCart()">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <h2>Premium Furniture For Indian Homes</h2>
+</section>
+
+<center>
+<select onchange="filterProducts(this.value)">
+    <option value="all">All</option>
+    <option value="sofa">Sofa</option>
+    <option value="table">Table</option>
+    <option value="bed">Bed</option>
+</select>
+</center>
+
+<section class="product-container">
+
+<div class="product" data-category="sofa">
+    <img src="sofa.1.jpg">
+    <h3>Wooden Sofa</h3>
+    <p>₹25000</p>
+    <button onclick="addToCart('Wooden Sofa',25000)">Add to Cart</button>
+</div>
+
+<div class="product" data-category="sofa">
+    <img src="sofa.2.jpg">
+    <h3>Wooden Sofa</h3>
+    <p>₹25000</p>
+    <button onclick="addToCart('Wooden Sofa',25000)">Add to Cart</button>
+</div>
+
+<div class="product" data-category="sofa">
+    <img src="sofa.3.jpg">
+    <h3>Wooden Sofa</h3>
+    <p>₹25000</p>
+    <button onclick="addToCart('Wooden Sofa',25000)">Add to Cart</button>
+</div>
+
+
+<div class="product" data-category="table">
+    <img src="dining.1.jpg">
+    <h3>Dining Table</h3>
+    <p>₹18000</p>
+    <button onclick="addToCart('Dining Table',18000)">Add to Cart</button>
+</div>
+
+<div class="product" data-category="table">
+    <img src="dining.2.jpg">
+    <h3>Dining Table</h3>
+    <p>₹18000</p>
+    <button onclick="addToCart('Dining Table',18000)">Add to Cart</button>
+</div>
+
+<div class="product" data-category="table">
+    <img src="dining.3.jpg">
+    <h3>Dining Table</h3>
+    <p>₹18000</p>
+    <button onclick="addToCart('Dining Table',18000)">Add to Cart</button>
+</div>
+
+<div class="product" data-category="bed">
+    <img src="bed.1.jpg">
+    <h3>Queen Bed</h3>
+    <p>₹30000</p>
+    <button onclick="addToCart('Queen Bed',30000)">Add to Cart</button>
+</div>
+
+<div class="product" data-category="bed">
+    <img src="bed.2.jpg">
+    <h3>Queen Bed</h3>
+    <p>₹30000</p>
+    <button onclick="addToCart('Queen Bed',30000)">Add to Cart</button>
+</div>
+
+<div class="product" data-category="bed">
+    <img src="bed.3.jpg">
+    <h3>Queen Bed</h3>
+    <p>₹30000</p>
+    <button onclick="addToCart('Queen Bed',30000)">Add to Cart</button>
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 Royal Indian Furniture</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
